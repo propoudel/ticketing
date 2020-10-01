@@ -5,7 +5,7 @@ export default ({ req }) => {
     // We are on the server
 
     return axios.create({
-      // baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      //baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
       baseURL: 'www.bazaarbro.com',
       headers: req.headers
     });
@@ -16,3 +16,4 @@ export default ({ req }) => {
     });
   }
 };
+
